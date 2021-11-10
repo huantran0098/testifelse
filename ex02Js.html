@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành luyện tập với cấu trúc if - else - if</title>
+</head>
+<body>
+<script>
+    let userName = prompt("Who's there?");
+
+    if (userName == "Admin") {
+        alert('Welcome');
+
+        let pass = prompt("insert Password!");
+
+        if (pass == "TheMaster") {
+            alert("Hello my boss!");
+
+        } else if (pass == null) {
+            alert('Get away, please!');
+        } else {
+            alert('Pass wrong!')
+        }
+
+    } else if (userName == null) {
+        alert('Canceled');
+    } else {
+        alert('Who you are?');
+    }
+
+
+</script>
+
+</body>
+</html>

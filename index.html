@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    <!--    câu lệnh tách biến-->
+    // var year = prompt("Enter a year");
+    //
+    // var isLeapYear = false;
+    //
+    // var isDivisibleBy4 = year % 4 == 0;
+    //
+    // if (isDivisibleBy4) {
+    //     var isDivisibleBy100 = year % 100 == 0;
+    //     if (isDivisibleBy100) {
+    //         var isDivisibleBy400 = year % 400 == 0;
+    //         if (isDivisibleBy400) {
+    //             isLeapYear = true;
+    //         }
+    //     } else {
+    //         isLeapYear = true;
+    //     }
+    // }
+    //
+    // if (isLeapYear) {
+    //     alert(year + " is a leap year");
+    // } else {
+    //     alert(year + " is not a leap year");
+    // }
+
+    // câu lệnh if else lồng nhau
+    let year = parseInt(prompt("Enter a year"));
+
+    let isLeapYear;
+
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                isLeapYear = true;
+            } else {
+                isLeapYear = false
+            }
+        } else {
+            isLeapYear = true;
+        }
+    }
+
+    if (isLeapYear) {
+        alert(year + " is a leap year");
+    } else {
+        alert(year + " is not a leap year");
+    }
+
+</script>
+</body>
+</html>
